@@ -1,0 +1,10 @@
+---
+-naem: ansible project
+ host: prod
+ remote_user: ubuntu
+ become: yes
+ tasks:
+  - name: war file
+    copy:
+    src: target
+    dest: cd/tmp
